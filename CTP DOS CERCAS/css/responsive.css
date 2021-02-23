@@ -1,0 +1,218 @@
+/*Móvil*/
+
+@media screen and (max-width: 400px){
+
+	/*Estructura*/
+	#wrapper{
+		width: 100%;
+		margin: 2% 2%;
+	}
+	aside, header, main, footer{
+		width: 96%;
+	}
+	aside{
+		margin: 0;
+		float: none;
+		height: 220px;
+		border-top: 5px solid var(--color-vino);
+		border-left: none;
+	}
+	main{
+		padding: 5px;
+	}
+	footer{
+		margin-top: 8px;
+		height: 370px;
+		font-size: 16px;
+	}
+
+	/*------Aside------*/
+	aside figure{
+		margin: 15px auto;
+	}
+	aside figure img{
+		width: 120px; height: 120px;
+		margin-left: 40px;
+	}
+	aside figure figcaption{
+		font-size: 14px;
+		margin-left: 4px;
+		margin-top: 15px;
+	}
+	
+	/*Menú*/
+	aside nav{
+		display: none;	
+	}
+	#bar, label, .nav-responsive, .close{
+		display: block;
+		position: absolute;
+	}
+	#bar{
+		display: none;
+	}
+	label{
+		background-color: #CCC6A1;
+		width: 35px; height: 35px;
+		top: 25px; right: 20px;
+	}
+	label i{
+		position: absolute;
+		top: 12%; right: 15%;
+		color: var(--color-vino);
+	}
+	.nav-responsive{
+		top: 12%; right: -20px;
+		width: 180px; height: 60vh;
+		background-color: #fff;
+		z-index: 1000;
+		padding: 18px;
+		transition: 200ms all;
+		visibility: hidden;
+		opacity: 0;
+	}
+	.nav-responsive ul{
+		float: right;
+		margin-right: 10px;
+		text-align: center;
+	}
+	.nav-responsive ul a li{
+		color: #44371A;
+		margin: 20px 0;
+		font-size: 18px;
+		border-radius: 0;
+		transition: none;
+		border-bottom: 2px solid var(--color-vino);
+	}
+	.nav-responsive ul a li:hover{
+		margin: 0;
+		background-color: transparent;
+		color: #44371A;
+		box-shadow: none;
+	}
+	.close{
+		visibility: hidden;
+	}
+	.close i{
+		right: 22%;
+	}
+
+	/*Efecto Visual Menú-Checkbox*/
+	#bar:checked ~ .nav-responsive{
+		visibility: visible;
+		opacity: 1;
+		right: -10px;
+	}
+
+	/*Efecto Hover - Barras Menú*/
+	#bar:checked ~ .close{
+		visibility: visible;
+	}
+
+	/*------Encabezado------*/
+	header h1{
+		font-size: 20px;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+	header hr{
+		height: 3px; width: 110px;
+		margin-left: 35%;
+	}
+
+	/*------Contenido Principal------*/
+
+	/*Slider-Inicio*/
+	.slider{
+		width: 100%; height: 200px;
+	}
+	.slider input[type="radio"] + label{
+		margin-bottom: 30px;
+		margin-left: 10px;
+		width: 12px; height: 12px;
+	}
+
+	/*Cuadro Texto-Nosotros*/
+	.nosotros{
+		width: 100%;
+		padding: 10px;
+		margin: 2px;
+	}
+	.nosotros p{
+		font-size: 16px;
+	}
+
+	/*Directora*/
+	.directora{
+		width: 80%;
+		margin: 20px 0;
+	}
+	.directora img{
+		margin-left: 60px;
+		width: 80%; height: 80%;
+	}
+	.directora figcaption{
+		width: 70%;
+		margin-left: 75px;
+	}
+
+	/*Galería-Oculta*/
+	.galeria{
+		display: none;
+	}
+
+	/*Tarjetas-Especialidades*/
+	.fila-card{
+		height: 100%; width: 100%;
+		flex-wrap: wrap;
+		margin-bottom: 5px;
+	}
+	.card{
+		margin: 15px 0;
+		width: 70%;
+	}
+	.card-txt{
+		font-size: 15px;
+	}
+
+	/*Servicios*/
+	.row{
+		width: 100%; height: 100%;
+		margin: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.cont-servicio{
+		width: 55%;
+		margin: 10px 0;
+	}
+	.cont-servicio h3{
+		width: 100%;
+		font-size: 18px;
+	}
+
+	/*------Pie de Página------*/
+	.division{
+		float: none;
+		width: 100%;
+		height: 130px;
+		margin: 5px 0px;
+		padding: 8px;
+	}
+	.division p{
+		line-height: 30px;
+	}
+	.division span{
+		margin-top: 25px;
+	}
+	.division a{
+		float: left;
+		margin-right: 5%;
+		margin-left: 12%;
+		margin-top: 20px;
+		opacity: 1;
+	}
+	.facebook:hover, .email:hover, .linkedin:hover{
+		color: var(--color-vino);
+	}
+}
